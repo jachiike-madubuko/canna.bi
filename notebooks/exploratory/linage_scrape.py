@@ -28,7 +28,10 @@ headers = {
 
 def find_parents(strain):
     time.sleep(2)
-    page= requests.get(f'https://www.leafly.com/strains/{strain}', headers=headers)
+    try:
+        page= requests.get(f'https://www.leafly.com/strains/{strain}', headers=headers)
+    except Exception:
+        return (strain,None,None)
     soup = BeautifulSoup(page.content, "html.parser")
     if soup.find('div' , class_="lineage__strain--two-parents") :
         try: 
@@ -58,5 +61,5 @@ def find_parents(strain):
 if __name__ == '__main__':
     p = Pool()
     strains = pd.read_csv('./data/raw/strains.csv')
-    records = p.map(find_parents, strains.slug[:50])
+    records = p.map(find_parents, strains.slug)
     pd.DataFrame.from_records(records, columns=['slug', 'parent_1', 'parent_2']).to_csv('./data/raw/linage.csv')

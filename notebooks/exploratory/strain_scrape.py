@@ -8,6 +8,7 @@ from multiprocessing import Pool
 import itertools
 # https://curlconverter.com/
 
+# https://medium.com/@aandrei_38387/mining-leafly-data-ae87c4b73856
 headers = {
     'authority': 'consumer-api.leafly.com',
     'accept': 'application/json',
