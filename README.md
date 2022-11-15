@@ -3,6 +3,24 @@ hyperactivity
 
 A Set of Cannabis Data Solutions
 
+Data Analyst Goals
+- Build a dashboard for understand
+  - Strain Lineage
+  - Rating Sentiment
+  - Terpene Distributions
+  - Combinations of the above
+- Testing Hypothesis
+  - Lineage Impact on Dispo Overall Sentiment
+  - Lineage and terpene impact
+
+Data Science Goals
+- Predict strains terp profile and name generator
+- Cluster Strains and Dispos using reviews
+
+Data Engineering Goals
+- Build an automated pipeline that pulls data from an API endpoint
+  - Schedule pulls from leafly into a cleaning pipeline
+  - Create an endpoint to query from based on dispo, strain, lineage, reviews
 Project Organization
 ------------
 
