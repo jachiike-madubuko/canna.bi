@@ -2,6 +2,11 @@ hyperactivity
 ==============================
 
 A Set of Cannabis Data Solutions
+1. A Leafly API
+2. A Dashboard for Review Sentiments Across Lineage and Dispos
+3. New Strain Terpene Predictor and Name Generator
+4. Dispo's Team lineup Strain recommender
+
 
 Data Analyst Goals
 - Build a dashboard for understand
