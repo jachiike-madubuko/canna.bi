@@ -8,7 +8,7 @@ A Set of Cannabis Data Solutions
 4. Dispo's Team lineup Strain recommender
 
 
-Data Analyst Goals
+## Data Analyst Goals
 - Build a dashboard for understand
   - Strain Lineage
   - Rating Sentiment
@@ -18,14 +18,15 @@ Data Analyst Goals
   - Lineage Impact on Dispo Overall Sentiment
   - Lineage and terpene impact
 
-Data Science Goals
+## Data Science Goals
 - Predict strains terp profile and name generator
 - Cluster Strains and Dispos using reviews
 
-Data Engineering Goals
+## Data Engineering Goals
 - Build an automated pipeline that pulls data from an API endpoint
   - Schedule pulls from leafly into a cleaning pipeline
   - Create an endpoint to query from based on dispo, strain, lineage, reviews
+
 Project Organization
 ------------
 
